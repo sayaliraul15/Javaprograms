@@ -1,0 +1,31 @@
+package JAVA;
+
+class Rect
+{
+	int l =10;
+	int b =20;
+}
+ public class areaofRectangle {
+	    
+	 public static void main(String[] args) {
+		 { 
+			  int a ;
+			 Rect rect = new Rect();
+			 rect.l = 10;
+			 rect.b =20;
+			 a=rect.l*rect.b ;
+			 System.out.println("Area of Rectangle is : " + a);
+			 
+  class Area {
+  
+	public void calculateArea(int length , int  bredth) {
+				int area = length * bredth ;
+			System.out.println("Area of Rectangle is = " + area);
+		 }
+  }
+		 }
+	 }
+ }
+			
+ 
+ 
