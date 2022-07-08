@@ -1,0 +1,55 @@
+package JAVA;
+
+class student {
+	private int id;
+	private String name;
+	private String course;
+
+	void setid(int x) {
+		id = x;
+	}
+
+	void setname(String y) {
+		name = y;
+	}
+
+	void setcourse(String z) {
+		course = z;
+	}
+
+	public int getid() {
+		return id;
+	}
+
+	public String getname() {
+		return name;
+	}
+
+	public String getcourse() {
+		return course;
+	}
+
+public class GetterAndSertter {
+	
+	public static void main(String[] args) {
+		student sayali=new student();
+		student vicky=new student();
+		
+        sayali.setid(12);
+        sayali.setname("sayali Raul");
+        sayali.setcourse("bachelor of information technology");
+        vicky.setid(15);
+        vicky.setname("vicky Raval");
+        vicky.setcourse("bachelor of computer science");
+          System.out.println(sayali.getid());
+           System.out.println(sayali.getname());
+           System.out.println(sayali.getcourse());
+           System.out.println(vicky.getid());
+           System.out.println(vicky.getname());
+           System.out.println(vicky.getcourse());
+	}
+}
+}
+
+	
+
