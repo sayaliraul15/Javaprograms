@@ -1,0 +1,66 @@
+package JAVA;
+ 
+class Empolyees {
+	private int id;
+	private String name;
+	private String department;
+
+	public Empolyees() {
+		id = 15;
+		name = "sayali Raul";
+
+	}
+
+	public Empolyees(int myid, String myname) {
+		id = myid;
+		name = myname;
+
+	}
+
+	public Empolyees(int myid, String myname, String mydepartment) {
+		id = myid;
+		name = myname;
+		department = mydepartment;
+
+	}
+
+	public int getid() {
+		return id;
+	}
+
+	public String getname() {
+		return name;
+
+	}
+
+	public String getdepartment() {
+		return department;
+	}
+}
+
+public class EmoplyeeConstructors {
+
+	public static void main(String[] args) {
+		Empolyees bas = new Empolyees();
+		Empolyees lah = new Empolyees(12, "vicky Raval", "tybscit");
+		Empolyees wow = new Empolyees(14, "Dipak");
+
+
+		System.out.println(bas.getname());
+		System.out.println(bas.getid());
+		System.out.println(bas.getdepartment());
+
+		System.out.println(lah.getname());
+		System.out.println(lah.getid());
+		System.out.println(lah.getdepartment());
+
+		System.out.println(wow.getname());
+		System.out.println(wow.getid());
+		System.out.println(wow.getdepartment());
+	}
+}
+
+
+
+
+
