@@ -1,0 +1,55 @@
+package JAVA;
+
+class studentinformation {
+	private String name;
+	private int id;
+	private String gender;
+	 private String standard ;
+
+	 public void setname(String name) {
+		this.name=name;
+	}
+
+	 public void setid(int id) {
+		this.id=id;
+	}
+
+ public void setgender(String gender) {
+		this.gender=gender;
+	}
+ public void setstandard(String standard) {
+	this.standard=standard;
+}
+	public int getid() {
+		return id;
+	}
+	public String getname() {
+		return name;
+	}
+	public String getgender() {
+		return gender;
+	}
+   public String getstandard() {
+	   return standard;
+   }
+}
+public class Example {
+
+	public static void main(String[] args) {
+		  
+			studentinformation sayali=new studentinformation();
+			
+			 sayali.setname("sayali Raul");
+			 sayali.setid(15);
+	       	sayali.setgender("Female");
+			 sayali.setstandard("12th");
+		
+	System.out.println(sayali.getname());
+	System.out.println(sayali.getid());
+	System.out.println(sayali.getgender());
+	System.out.println(sayali.getstandard());
+	        
+	           
+	}
+
+}
