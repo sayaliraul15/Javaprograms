@@ -1,0 +1,89 @@
+package JAVA;
+
+import java.util.Random;
+import java.util.Scanner;
+
+class RockPaperGame {
+	public static void main(String[]args) {
+		Scanner sc = new Scanner(System.in);
+		Random rand= new Random();
+		int cmp_choice = rand.nextInt(3)+1;
+		int no_choice =0;
+		int t_chance =5;
+		int c_point = 0;
+		int p_point = 0;
+		
+		   while (no_choice < t_chance) {
+			   System.out.println("Enter Rock,Paper,Scissor as 1,2,3 respectively:");
+			   byte User_input = sc.nextByte();
+			  
+		if(User_input==cmp_choice) {
+			System.out.println("It is a tie hence no addition of Score");
+		}
+		
+		else if (User_input<=3 && User_input>=1) {
+			if (User_input==1 && cmp_choice==3) {
+				System.out.println("Congrates You Won!!");
+				c_point =(int) c_point + 1;
+		System.out.println("Your Score is"+ c_point+ "Computer Score is"+ p_point);
+	System.out.println("You Entered"+ User_input+"and the Computer choice was"+ cmp_choice);
+				
+			}
+			else if (User_input==2 && cmp_choice==3) {
+				System.out.println("Alas You lost !!");
+				p_point =(int) p_point+1;
+	System.out.println("Your Score is"+ c_point+ "computer Score is"+p_point);
+	System.out.println("You Entered"+ User_input+"and the Computer choice"+ cmp_choice);
+			}
+			
+		if(User_input==1 && cmp_choice==2) {
+			System.out.println("Alas You lost !!");
+		 p_point=(int) p_point +1;
+	System.out.println("Your Score is"+ c_point+ "computer Score is"+p_point);
+	System.out.println("You Entered"+ User_input+"and the Computer choice"+ cmp_choice);
+		}
+		
+		else if(User_input==3 && cmp_choice==2) {
+		 System.out.println("Congrates You Won !!");
+		 c_point = (int)c_point + 1;
+	System.out.println("Your Score is"+ c_point+ "computer Score is"+p_point);
+	System.out.println("You Entered"+ User_input+"and the Computer choice"+ cmp_choice);
+		}
+		
+		else if (User_input==2 && cmp_choice==1){
+            System.out.println("Alas you lost!!");
+    p_point = (int)p_point + 1;
+    System.out.println("Your Score is" + c_point + "Computer score is" + p_point);
+       System.out.println("You Entered" + User_input +"and the Computer choice was"+ cmp_choice);
+		}
+
+        else if (User_input==3 && cmp_choice==1){
+            System.out.println("Congrats You Won!!");
+    c_point = (int)c_point + 1;
+    System.out.println("Your Score is" + c_point + "Computer score is" + p_point);
+            System.out.println("You Entered" + User_input +"and the Computer choice was"+ cmp_choice);
+        }
+    }
+		
+		else {
+			System.out.println("Please Enter Right Input");
+		}
+		no_choice ++;
+		   }
+	System.out.println("Game Over");
+	System.out.println("Scoreboard");
+	if(c_point>p_point) {
+		System.out.println("You Win the game");
+		System.out.println("Your Final Score is"+ c_point +"Computer choice"+ p_point);
+	}
+	else if(c_point<p_point) {
+		System.out.println("You loss the game");
+		System.out.println("Your Final Score is"+ c_point +"Computer choice"+ p_point);
+	}
+	else if(c_point==p_point) {
+		System.out.println("Tie");
+		System.out.println("Your Final Score is"+ c_point +"Computer choice"+ p_point);
+	}
+	sc.close();	
+		
+		
