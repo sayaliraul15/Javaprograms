@@ -1,0 +1,9 @@
+package JAVA;
+
+public class CountChar {
+	 public static void main(String[] args) {    
+		 String s1 = "old is gold";
+			int s2 =s1.length();
+			System.out.println(s2);
+	 }
+}
