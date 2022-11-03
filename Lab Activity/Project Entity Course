@@ -1,0 +1,53 @@
+package com.anudip.courseapp.entity;
+
+public class Course {
+	
+	private int id;
+	private String Cname;
+	private int Cduration;
+	private String Ctitle;
+	private String Cdescrption;
+	
+	public Course(int id, String cname, int cduration, String ctitle, String cdescrption) {
+		super();
+		this.id = id;
+		Cname = cname;
+		Cduration = cduration;
+		Ctitle = ctitle;
+		Cdescrption = cdescrption;
+	}
+	public Course() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getCname() {
+		return Cname;
+	}
+	public void setCname(String cname) {
+		Cname = cname;
+	}
+	public int getCduration() {
+		return Cduration;
+	}
+	public void setCduration(int cduration) {
+		Cduration = cduration;
+	}
+	public String getCtitle() {
+		return Ctitle;
+	}
+	public void setCtitle(String ctitle) {
+		Ctitle = ctitle;
+	}
+	public String getCdescrption() {
+		return Cdescrption;
+	}
+	public void setCdescrption(String cdescrption) {
+		Cdescrption = cdescrption;
+	}
+}
